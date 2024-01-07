@@ -29,8 +29,16 @@ main {
     text-align: start;
 }
 
+main h2 {
+    margin: 16px 13%
+}
+
+#cabecalho div h2 {
+    margin: 0;
+}
+
 header {
-    width: 90%;
+    width: 70%;
     padding: 0 20px;
     margin: 22px;
     display: inline-flex;
@@ -57,10 +65,11 @@ header ul li a {
 
 .produto {
     display: block;
-
 }
 
-.produto {
+
+
+.produto, form {
     text-align: center;
     border-radius: 16px;
     background-color: rgb(197, 197, 197);
@@ -69,12 +78,19 @@ header ul li a {
     height: 390px;
 }
 
-#lista_produtos {
+#lista_produtos{
+
+margin: 0 16%;
     display: grid;
-    width: 100%;
+    max-width: 1280px;
     grid-template-columns: repeat(auto-fill, 300px);
 
-    justify-items: start;
+    justify-items: center;
+}
+
+#criador_anuncios {
+    grid-row: unset;
+    
 }
 
 .produto h4 {
@@ -88,13 +104,11 @@ header ul li a {
 
 form {
     display: block;
-    justify-content: space-between;
     align-items: center;
     min-width: 255px;
     background-color: rgb(197, 197, 197);
     text-align: center;
     border-radius: 16px;
-    height: 160px;
 }
 
 form h4 {
@@ -122,14 +136,50 @@ form button {
     cursor: pointer;
 }
 
+.adicionar_ao_carrinho {
+    background-color: green;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
 form h1 {
     font-weight: bold;
 }
 
-footer {
-    bottom: 0;
-}
-
 #nome_produto {
     max-width: 100%;
+}
+
+#cabecalho {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+}
+
+#cabecalho img {
+    margin: 16px;
+    max-width: 100%;
+    width: 600px;
+}
+
+#cabecalho div {
+    margin: 16px;
+    width: 560px;
+}
+
+#cabecalho div p {
+    margin: 22px 0;
+}
+
+h2 {
+    font-size: 32pt;
+}
+
+footer {
+    bottom: 0;
 }
